@@ -1,9 +1,9 @@
 resource "google_container_cluster" "gcp_kubernetes" {
   name               = "${var.cluster_name}"
-  zone               = "us-west1-a"
+  location               = "us-west1-a"
   initial_node_count = "${var.gcp_cluster_count}"
 
-  additional_zones = [
+  node_locations = [
     "us-west1-b",
     "us-west1-c",
   ]
