@@ -1,5 +1,5 @@
 provider "google" {
   credentials = "${file("../secrets/account-thrashingcode.json")}"
-  project     = "thrashingcorecode"
+  project     = "your-GCP-Project-ID"
   region      = "us-west1"
 }
